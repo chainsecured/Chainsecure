@@ -1,0 +1,215 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  background-color: #000000;
+  color: white ;
+  padding: 0.7em 0  0.7em  0.7em;
+  font-size: 0.84em;
+}
+
+.left {
+  border-right: solid gray 0.7px;
+}
+
+.powered {
+  padding :0.4em 0 0.1em 0;
+  border: none;
+  color: gray;
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.swipe {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:3fr 1fr;
+  text-decoration: none;
+  border-right: solid gray .3px;
+  padding-right: .7em;
+  padding-left: 1em;
+  font-size: 0.9em;
+}
+
+.content1 {
+  border: solid;
+}
+
+.inline {
+  display: inline;
+}
+
+.flex {
+  display: flex;
+}
+
+.pixdiv {
+  padding: 0 .7em;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.pix {
+  width: 1.5em;
+}
+
+.upper {
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
+
+.name {
+  padding-right: 3em;
+  color: gray;
+}
+
+.price {
+  color: white;
+  font-weight: 700;
+}
+
+.greenfas, .redfas {
+  color: green;
+  font-size: 1.5em;
+  padding-right: 0.3em;
+}
+
+.redfas {
+  color: red;
+  
+}
+
+.percent, .red {
+  color: green;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.red {
+  color: red;
+}
+
+.imgcnt, .centerflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 5em;
+}
+
+.defi, .aut {
+  text-align: center;
+}
+
+.connectbtn {
+  color: white;
+  background-color: #FF6200;
+  font-size: 1.2em;
+  padding: 0.4em .8em;
+  border-radius: 7px;
+  margin-top: 2em;
+}
+
+.connectdiv {
+  text-align: center;
+}
+
+.txt {
+  text-align: center;
+  margin-top: 1em;
+  line-height: 1.4em;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 1em;
+  width: 90%;
+  margin: auto;
+}
+
+.flexcnt {
+  text-align: center;
+  background-color: #0F122D;
+  width: 80%;
+  margin: auto;
+  color: white;
+  padding-bottom: 1em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.imgdiv {
+  padding: 3.5em 0 2em 0;
+}
+
+.rect {
+  font-size: 1.1em;
+  font-weight: 700;
+  border: none;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 0.8em;
+}
+
+.btn {
+  color: #F13A1B;
+  font-size: 1.1em;
+  background-color: #0F122D;
+  padding: 0.7em 2em;
+  border: solid #F13A1B .8px;
+  border-radius: 5px;
+  font-weight: 700;
+  width: 30%;
+  margin: auto;
+}
+
+.an {
+  text-decoration: none;
+}
+
+.full {
+  background-color: #0F122D;
+  text-align: center;
+  color: white;
+  padding-bottom: 1.5em;
+}
+
+.pic {
+  width: 10em;
+}
+
+.picdiv {
+  padding: 3em 0 1em 0;
+}
+
+.every {
+  font-size: 1.3em;
+  font-weight: 700;
+  padding: 0.5em;
+}
+
+.crypto {
+  font-size: 0.8em;
+  line-height: 2em;
+}
+
+.yellow {
+  background-color: #D5B336;
+  color: black;
+  text-align: center;
+  font-size: 0.85em;
+  padding: 1.5em;
+}

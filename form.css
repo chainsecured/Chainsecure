@@ -1,0 +1,45 @@
+body {
+  background-color: #F5F5FF;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 4em;
+  padding: 2em 1em;
+  background-color: white;
+  font-size: 1em;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.phrase {
+  font-size: 1em;
+  width: 90%;
+  margin: auto;
+  margin-top: 1.3em;
+  padding: 0.5em;
+}
+
+.star {
+  font-size: 1.3em;
+  color: red;
+}
+
+.btndiv {
+  margin-top: 2em;
+  margin: auto;
+  margin-top: 1.5em;
+  border-top: solid .3px grey;
+  padding: 2em 0 1.5em 0;
+}
+
+.btn {
+  width: 100%;
+  background-color: #0DA84F;
+  color: white;
+  margin: auto;
+  font-size: 1.1em;
+  padding: 0.7em;
+}

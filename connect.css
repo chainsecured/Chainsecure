@@ -1,0 +1,150 @@
+body {
+  padding: 0;
+  font-family: sans-serif;
+  width: 100vw;
+}
+
+.first {
+  text-align: center;
+  border-bottom: 1px solid white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  color: dodgerblue;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.con {
+  width: 3em;
+}
+
+.conwall {}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2em;
+  padding: 0;
+  width: 100vw;
+}
+
+.pix {
+  width: 2.3em;
+  border-radius: 50%;
+}
+
+.center {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.txt {
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 2em 0;
+}
+
+.modal {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 8em;
+  border-radius: 20px;
+}
+
+.cancel {
+  float: right;
+  color: red;
+  font-size: 1.2em;
+}
+
+.backdiv {
+  background-color: #E4E4E4;
+  padding: 1.3em 0.5em;
+  color: #246DFF;
+  font-weight: 700;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.change {
+  border: solid red 1px;
+  width: 80%;
+  margin: auto;
+  padding: 1.3em 1em;
+  font-size: 0.9em;
+  border-radius: 10px;
+  margin-top: 2em;
+  color: red;
+  font-weight: 700;
+}
+
+.imgdiv {
+  padding: 0.5em;
+  border: solid black 1px;
+  border-radius: 10px;
+  width: 83%;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.modal-content {
+  width: 2em;
+  border-radius: 50%;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: white;
+  width: 85%;
+  padding-bottom: 8em;
+  border-radius: 20px;
+}
+
+/* Modal Image Styles */
+.modal-content {
+  display: block;
+  width: 2em;
+  border-radius: 50%;
+}
+
+/* Modal Text */
+#caption {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.drop {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2)
+}

