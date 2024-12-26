@@ -37,6 +37,7 @@ body {
   padding-right: .7em;
   padding-left: 1em;
   font-size: 0.9em;
+  display: inline-flex;
 }
 
 .content1 {
