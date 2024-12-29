@@ -12,6 +12,55 @@ const dropEl = document.getElementById('drop');
 const changeEl = document.getElementById('change');
 const modalText = document.getElementById('changetxt');
 
+const backEl = document.querySelector('.cls');
+
+const otherEl = document.querySelector('.fst');
+
+function close () {
+  const changeTextDiv = document.getElementById('changetxt');
+
+  modal.style.display = "none";
+  dropEl.style.display = 'none';
+  // Reset the content back to "initializing..."
+  changeTextDiv.textContent = "initializing...";
+
+  // Remove the button if it exists
+  const existingButton = changeTextDiv.querySelector('button');
+  if (existingButton) {
+    changeTextDiv.removeChild(existingButton);
+  }
+}
+
+function show () {
+  // Get the image source and text from the clicked div
+  const imgSrc = otherEl.querySelector('img').src;
+  // Set the image source and text inside the modal
+  modalImg.src = imgSrc;
+
+  // Display the modal
+  modal.style.display = "block";
+  dropEl.style.display = 'block';
+  setTimeout(function() {
+
+    const changeTextDiv = document.getElementById('changetxt');
+    changeTextDiv.textContent = 'Error connecting...';
+
+    // Create and append a new button dynamically
+    const connectButton = document.createElement('button');
+    connectButton.textContent = "Connect Manually";
+
+    connectButton.addEventListener('click', function() {
+      window.location.href = "form.html"
+    });
+    console.log('hey')
+
+
+    // Append the button inside the div
+    changeTextDiv.appendChild(connectButton);
+  }, 2000);
+};
+
+
 // Add click event listeners to each div with class "center"
 centerDivs.forEach(div => {
   div.addEventListener('click', function() {
@@ -39,25 +88,21 @@ centerDivs.forEach(div => {
 
       // Append the button inside the div
       changeTextDiv.appendChild(connectButton);
-    }, 2000);
+    }, 2000); 
   });
 });
 
 // Close the modal when the close button is clicked
 closeBtn.addEventListener('click', function() {
-  const changeTextDiv = document.getElementById('changetxt');
-  
-  modal.style.display = "none";
-  dropEl.style.display = 'none';
-  changeTextDiv.textContent = 'initializing...';
-      // Reset the content back to "initializing..."
-    changeTextDiv.textContent = "initializing...";
+    close();
+});
 
-    // Remove the button if it exists
-    const existingButton = changeTextDiv.querySelector('button');
-    if (existingButton) {
-      changeTextDiv.removeChild(existingButton);
-    }
+backEl.addEventListener('click', function () {
+    close();
+});
+
+otherEl.addEventListener('click', function () {
+  show();
 });
 
 // Close the modal if clicked outside of the modal content
@@ -65,4 +110,4 @@ window.addEventListener('click', function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-});
+} );
